@@ -4,7 +4,7 @@
 # ----------------------------
 # 1️⃣ Create Account
 # ----------------------------
-curl -X POST http://localhost:3001/api/v1/accounts \
+curl -X POST http://localhost:3001/api/accounts \
 -H "Content-Type: application/json" \
 -d '{
   "name": "MyAccount",
@@ -14,7 +14,7 @@ curl -X POST http://localhost:3001/api/v1/accounts \
 # ----------------------------
 # 2️⃣ Update Account
 # ----------------------------
-curl -X PUT http://localhost:3001/api/v1/accounts/<account_id> \
+curl -X PUT http://localhost:3001/api/accounts/<account_id> \
 -H "Content-Type: application/json" \
 -d '{
   "name": "UpdatedName",
@@ -24,4 +24,4 @@ curl -X PUT http://localhost:3001/api/v1/accounts/<account_id> \
 # ----------------------------
 # 3️⃣ Get Stats
 # ----------------------------
-curl http://localhost:3001/api/v1/accounts/stats
+curl http://localhost:3001/api/accounts/stats
